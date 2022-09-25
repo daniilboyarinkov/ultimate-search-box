@@ -1,0 +1,129 @@
+:root {
+  --main-color: #6667ab;
+}
+
+a {
+  color: var(--main-color);
+}
+
+@font-face {
+  font-family: "Pacifico";
+  src: url("/fonts/Pacifico-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Dangrek";
+  src: url("/fonts/Dangrek-Regular.ttf");
+}
+
+h1 {
+  user-select: none;
+  font-family: Pacifico, sans-serif;
+  text-shadow: 0 0 12px var(--main-color);
+}
+
+body,
+html {
+  background-color: #212121;
+  color: #efefef;
+}
+
+*::-webkit-scrollbar {
+  width: 4px;
+  background-color: #aaa;
+  border-radius: 4px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #333;
+  border-radius: 4px;
+}
+
+input {
+  border: none;
+  outline: 2px solid #ccc;
+  border-radius: 6px;
+  padding: 0.5rem 1rem;
+  color: #333;
+  font-weight: bold;
+}
+
+input:active,
+input:focus {
+  outline-color: var(--main-color);
+}
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  position: relative;
+}
+
+.Ribbon {
+  cursor: pointer;
+  position: absolute;
+  top: -5px;
+  left: -40px;
+  text-align: center;
+  font-weight: bold;
+  background-color: chartreuse;
+  height: 21px;
+  width: 121px;
+  color: white;
+  box-shadow: 0 0 5px white;
+  text-shadow: 0 0 15px var(--main-color);
+
+  transform: rotate(-45deg);
+}
+
+.SearchResults {
+  border-radius: 12px;
+  background-color: #323232;
+  color: #ccc;
+  font-weight: bold;
+  overflow: hidden;
+  text-shadow: 0 0 4px var(--main-color);
+  font-family: sans-serif;
+}
+
+.SearchResults li {
+  list-style-type: none;
+  padding: 0.5rem 1rem;
+  font-family: Dangrek, sans-serif;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+.Place {
+  font-weight: bold;
+  margin: 1rem;
+  font-size: 1.2rem;
+  font-family: Dangrek, sans-serif;
+}
+
+.Popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: #000000aa;
+  display: grid;
+  place-items: center;
+  overflow-y: scroll;
+}
+
+.Popup__content {
+  background-color: #eee;
+  padding: 20px;
+  margin: 2rem 0;
+  border-radius: 24px;
+  box-shadow: 10px 10px 21px #dddddd66;
+
+  max-width: min(80vw, 720px);
+}
+
+.Popup__content > p {
+  font-weight: bold;
+  color: #666;
+}

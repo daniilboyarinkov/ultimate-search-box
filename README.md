@@ -1,5 +1,7 @@
 # Ultimate Search Box
 
+## **[Link to the project](https://g6yzs0.csb.app/)**
+
 ## Whoah?
 
 This is a search bar that provides you suggestions while you typing.
